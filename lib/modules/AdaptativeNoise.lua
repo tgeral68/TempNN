@@ -1,6 +1,6 @@
 require 'nn'
 require 'nngraph'
-require 'NLPRelationClassification/lib/modules/GaussianSampler'
+require 'GaussianSampler'
 if(not ADAPTATIVENOISE) then
   ADAPTATIVENOISE = true
   local AdaptativeNoise, parent = torch.class('nn.AdaptativeNoise', 'nn.Module')
